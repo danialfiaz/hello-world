@@ -1,0 +1,21 @@
+version: 0.2
+
+
+phases:
+  install:
+    commands:
+      - echo starting things
+      - apt-get update
+  pre_build:
+    commands:
+      - echo show the environment variable
+      - echo environment_variable
+      - echo $danial
+  build:
+    commands:
+      - echo build started on 'date'
+      - echo index file
+      - sh bash.sh
+  post_build:
+    commands:
+      - echo build finished on 'date'
