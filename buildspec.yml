@@ -5,7 +5,6 @@ phases:
   install:
     commands:
       - echo starting things
-      - apt-get update
   pre_build:
     commands:
       - echo show the environment variable
